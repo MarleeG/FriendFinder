@@ -1,3 +1,12 @@
 .header{
     font-family: 'Righteous', cursive;
 }
+
+#survey_icon{
+    width: 50px;
+    height: auto;
+}
+
+#smallModal{
+    background-color: red;
+}

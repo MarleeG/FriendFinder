@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FriendFinder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+    <!-- Bootrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- My stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,12 +30,33 @@
             </p>
             <p>Then find the friend with the greatest compatibility!</p>
             <hr class="my-4">
-            
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Survey</a>
-            </p>
+
+            <a href="/survey">
+                <button type="button" class="btn btn-lg btn-primary">
+                    <h4>
+                        <span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4>
+                </button>
+            </a>
+
         </div>
+        <p>
+            <!-- /api/friends -->
+            <a href="/api/users">API Friends List</a> |
+
+            <!-- https://github.com/afhaque/friendfinder -->
+            <a href="https://github.com/MarleeG/FriendFinder">GitHub Repo</a>
+        </p>
     </div>
+
+
+    
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Backend Javascript -->
+    
+
 </body>
 
 </html>

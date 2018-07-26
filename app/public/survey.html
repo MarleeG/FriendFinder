@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FriendFinder - Mine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Survey Questions</h1>
+        <hr class="my-4">
+
+        <h2>About You</h2>
+        <p>Name (Required)</p>
+        <input type="text" id="name" class="form-control name" placeholder="Jane Smith" required="">
+        <br>
+        <p>Link to Photo Image (Required)</p>
+        <input type="text" id="photo" class="form-control photo" placeholder="image.jpg" required="">
+        <hr class="my-4">
+
+        <!-- Questions -->
+        <strong>Question 1</strong>
+        <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+
+        <form>
+            <select class="options" id="question_one">
+                <option value="0" data-aoption-array-index="0">Select an Option</option>
+                <option value="1" data-aoption-array-index="1">1 (Strongly Disagree)</option>
+                <option value="2" data-aoption-array-index="2">2</option>
+                <option value="3" data-aoption-array-index="3">3</option>
+                <option value="4" data-aoption-array-index="4">4</option>
+                <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
+            </select>
+        </form>
+
+        <br>
+
+        <strong>Question 2</strong>
+        <p>Generally speaking, you rely more on your experience than your imagination.</p>
+
+        <form>
+            <select class="options" id="question_two">
+                <option value="0" data-aoption-array-index="0">Select an Option</option>
+                <option value="1" data-aoption-array-index="1">1 (Strongly Disagree)</option>
+                <option value="2" data-aoption-array-index="2">2</option>
+                <option value="3" data-aoption-array-index="3">3</option>
+                <option value="4" data-aoption-array-index="4">4</option>
+                <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
+            </select>
+        </form>
+
+        <br>
+
+        <strong>Question 3</strong>
+        <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+
+        <form>
+            <select class="options" id="question_three">
+                <option value="0" data-aoption-array-index="0">Select an Option</option>
+                <option value="1" data-aoption-array-index="1">1 (Strongly Disagree)</option>
+                <option value="2" data-aoption-array-index="2">2</option>
+                <option value="3" data-aoption-array-index="3">3</option>
+                <option value="4" data-aoption-array-index="4">4</option>
+                <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
+            </select>
+        </form>
+
+        <br>
+
+        <strong>Question 4</strong>
+        <p>You rarely do something just out of sheer curiosity.</p>
+
+        <form>
+            <select class="options" id="question_four">
+                <option value="0" data-aoption-array-index="0">Select an Option</option>
+                <option value="1" data-aoption-array-index="1">1 (Strongly Disagree)</option>
+                <option value="2" data-aoption-array-index="2">2</option>
+                <option value="3" data-aoption-array-index="3">3</option>
+                <option value="4" data-aoption-array-index="4">4</option>
+                <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
+            </select>
+        </form>
+
+        <br>
+
+        <strong>Question 5</strong>
+        <p>People can rarely upset you.</p>
+
+        <form>
+            <select class="options" id="question_five">
+                <option value="0" data-aoption-array-index="0">Select an Option</option>
+                <option value="1" data-aoption-array-index="1">1 (Strongly Disagree)</option>
+                <option value="2" data-aoption-array-index="2">2</option>
+                <option value="3" data-aoption-array-index="3">3</option>
+                <option value="4" data-aoption-array-index="4">4</option>
+                <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
+            </select>
+        </form>
+
+        <br>
+
+        <strong>Question 6</strong>
+        <p>It is often difficult for you to relate to other people’s feelings.</p>
+
+        <form>
+            <select class="options" id="question_six">
+                <option value="0" data-aoption-array-index="0">Select an Option</option>
+                <option value="1" data-aoption-array-index="1">1 (Strongly Disagree)</option>
+                <option value="2" data-aoption-array-index="2">2</option>
+                <option value="3" data-aoption-array-index="3">3</option>
+                <option value="4" data-aoption-array-index="4">4</option>
+                <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
+            </select>
+        </form>
+
+        <br>
+
+        <strong>Question 7</strong>
+        <p>In a discussion, truth should be more important than people’s sensitivities.</p>
+
+        <form>
+            <select class="options" id="question_seven">
+                <option value="0" data-aoption-array-index="0">Select an Option</option>
+                <option value="1" data-aoption-array-index="1">1 (Strongly Disagree)</option>
+                <option value="2" data-aoption-array-index="2">2</option>
+                <option value="3" data-aoption-array-index="3">3</option>
+                <option value="4" data-aoption-array-index="4">4</option>
+                <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
+            </select>
+        </form>
+
+        <br>
+
+        <strong>Question 8</strong>
+        <p>You rarely get carried away by fantasies and ideas.</p>
+
+        <form>
+            <select class="options" id="question_eight">
+                <option value="0" data-aoption-array-index="0">Select an Option</option>
+                <option value="1" data-aoption-array-index="1">1 (Strongly Disagree)</option>
+                <option value="2" data-aoption-array-index="2">2</option>
+                <option value="3" data-aoption-array-index="3">3</option>
+                <option value="4" data-aoption-array-index="4">4</option>
+                <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
+            </select>
+        </form>
+
+        <br>
+
+        <strong>Question 9</strong>
+        <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
+
+        <form>
+            <select class="options" id="question_nine">
+                <option value="0" data-aoption-array-index="0">Select an Option</option>
+                <option value="1" data-aoption-array-index="1">1 (Strongly Disagree)</option>
+                <option value="2" data-aoption-array-index="2">2</option>
+                <option value="3" data-aoption-array-index="3">3</option>
+                <option value="4" data-aoption-array-index="4">4</option>
+                <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
+            </select>
+        </form>
+
+        <br>
+
+        <strong>Question 10</strong>
+        <p>You feel more energetic after spending time with a group of people.</p>
+
+        <form>
+            <select class="options" id="question_ten">
+                <option value="0" data-aoption-array-index="0">Select an Option</option>
+                <option value="1" data-aoption-array-index="1">1 (Strongly Disagree)</option>
+                <option value="2" data-aoption-array-index="2">2</option>
+                <option value="3" data-aoption-array-index="3">3</option>
+                <option value="4" data-aoption-array-index="4">4</option>
+                <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
+            </select>
+        </form>
+
+        <br>
+
+        <br>
+        <button type="submit" class="btn btn-primary btn-lg btn-block submit_button" id="submit">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            Submit</button>
+
+        <hr class="my-4">
+
+        <p>
+            <!-- /api/friends -->
+            <a href="/api/friends">API Friends List</a> |
+
+            <!-- https://github.com/afhaque/friendfinder -->
+            <a href="https://github.com/MarleeG/FriendFinder">GitHub Repo</a>
+        </p>
+
+
+        <!-- Match Modal-->
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+            id="myModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2 class="ml-auto mr-auto">Your Perfect Match!</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p class="match_info text-center">
+                            <p>Name: </p>
+                            <p id="match_name"></p>
+                        </p>
+                        <div class="mx-auto">
+                            <img id="perfect_match_image" alt="your_match" style="width: 100px; height: auto;" />
+                        </div>
+
+
+                        <button type="button" class="btn btn-outline-primary projectButton projectButtonOne" onclick="location.href='https://marleeg.github.io/TriviaGame/'">View Project</button>
+                        <button type="button" class="btn btn-outline-primary projectButton projectButtonTwo" onclick="location.href='https://github.com/MarleeG/TriviaGame'">Repository</button>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Error Modal -->
+        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true"
+            id="smallModal">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="ml-auto mr-auto">ERROR</h2>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="alert alert-danger text-center" role="alert">
+                            Fill out the entire form!
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            var questionValues = [];
+
+            // Name and Image
+            var userInfo = [];
+
+            // Values User Inputted
+            var allValues = [];
+
+            // User Info and scores
+            var allData = [];
+
+
+            $(".submit_button").on("click", function () {
+                allValues = [];
+                $("#perfect_match_image").removeAttr("src");
+                $("#match_name").text("");
+
+
+                questionValues = [{
+                    question: $("#question_one").val()
+                }, {
+                    question: $("#question_two").val()
+                }, {
+                    question: $("#question_three").val()
+                }, {
+                    question: $("#question_four").val()
+                }, {
+                    question: $("#question_five").val()
+                }, {
+                    question: $("#question_six").val()
+                }, {
+                    question: $("#question_seven").val()
+                }, {
+                    question: $("#question_eight").val()
+                }, {
+                    question: $("#question_nine").val()
+                }, {
+                    question: $("#question_ten").val()
+                }];
+
+                checkingValues();
+
+            });
+
+            function checkingValues() {
+
+                // check to see if they are filled in here
+
+
+                for (var j = 0; j < questionValues.length; j++) {
+                    allValues.push(parseFloat(questionValues[j].question));
+
+                }
+
+                for (var i = 0; i < allValues.length; i++) {
+
+                }
+
+                // console.log();
+
+                userInfo = {
+                    username: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: allValues
+                };
+                console.log(userInfo)
+
+                // console.log("name: ", userInfo[0].username.trim());
+                // console.log("url: ", userInfo[0].photo.trim());
+                // console.log(userInfo[0].scores);
+
+                console.log("User answers: ", allValues);
+
+                if (userInfo.username === "" && userInfo.photo === "" || allValues.indexOf(0) >= 0) {
+                    $('#smallModal').modal('toggle');
+                    i = allValues.length;
+
+
+                } else {
+
+                    // 
+
+                    $.post("/api/friends", userInfo, function (data) {
+                        console.log("My data", data);
+                        alert("Adding character...");
+
+                        // alert("sending info to server");
+
+
+                        $("#perfect_match_image").attr("src", data.photo);
+                        $("#match_name").text(data.name);
+                        $('#myModal').modal('toggle');
+                    })
+                    
+
+                }
+            }
+
+
+
+        });
+    </script>
+
+</body>
+
+</html>
