@@ -18,7 +18,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
 
 </head>
-
 <body>
     <div class="container">
         <h1>Survey Questions</h1>
@@ -32,7 +31,6 @@
         <input type="text" id="photo" class="form-control photo" placeholder="image.jpg" required="">
         <hr class="my-4">
 
-        <!-- Questions -->
         <strong>Question 1</strong>
         <p>Your mind is always buzzing with unexplored ideas and plans.</p>
 
@@ -48,7 +46,6 @@
         </form>
 
         <br>
-
         <strong>Question 2</strong>
         <p>Generally speaking, you rely more on your experience than your imagination.</p>
 
@@ -62,9 +59,7 @@
                 <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
             </select>
         </form>
-
         <br>
-
         <strong>Question 3</strong>
         <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
 
@@ -78,9 +73,7 @@
                 <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
             </select>
         </form>
-
         <br>
-
         <strong>Question 4</strong>
         <p>You rarely do something just out of sheer curiosity.</p>
 
@@ -94,9 +87,7 @@
                 <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
             </select>
         </form>
-
         <br>
-
         <strong>Question 5</strong>
         <p>People can rarely upset you.</p>
 
@@ -110,9 +101,7 @@
                 <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
             </select>
         </form>
-
         <br>
-
         <strong>Question 6</strong>
         <p>It is often difficult for you to relate to other people’s feelings.</p>
 
@@ -126,9 +115,7 @@
                 <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
             </select>
         </form>
-
         <br>
-
         <strong>Question 7</strong>
         <p>In a discussion, truth should be more important than people’s sensitivities.</p>
 
@@ -142,9 +129,7 @@
                 <option value="5" data-aoption-array-index="5">5 (Strongly Agree)</option>
             </select>
         </form>
-
         <br>
-
         <strong>Question 8</strong>
         <p>You rarely get carried away by fantasies and ideas.</p>
 
@@ -160,7 +145,6 @@
         </form>
 
         <br>
-
         <strong>Question 9</strong>
         <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
 
@@ -176,7 +160,6 @@
         </form>
 
         <br>
-
         <strong>Question 10</strong>
         <p>You feel more energetic after spending time with a group of people.</p>
 
@@ -192,7 +175,6 @@
         </form>
 
         <br>
-
         <br>
         <button type="submit" class="btn btn-primary btn-lg btn-block submit_button" id="submit">
             <i class="fa fa-check-circle" aria-hidden="true"></i>
@@ -208,7 +190,6 @@
             <a href="https://github.com/MarleeG/FriendFinder">GitHub Repo</a>
         </p>
 
-
         <!-- Match Modal-->
         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
             id="myModal">
@@ -219,17 +200,14 @@
                         <h2 class="ml-auto mr-auto">Your Perfect Match!</h2>
                     </div>
                     <div class="modal-body">
-                        <p class="match_info text-center">
-                            <p>Name: </p>
-                            <p id="match_name"></p>
+                        <p class="match_info">
+                            <p id="match_name"  class="text-center">Name: </p>
+                            <!-- <p id="match_name text-center"></p> -->
                         </p>
                         <div class="mx-auto">
-                            <img id="perfect_match_image" alt="your_match" style="width: 100px; height: auto;" />
+                            <img id="perfect_match_image" alt="your_match" style="width: 100px; height: auto; margin-left:45%;" />
                         </div>
-
-
-                        <button type="button" class="btn btn-outline-primary projectButton projectButtonOne" onclick="location.href='https://marleeg.github.io/TriviaGame/'">View Project</button>
-                        <button type="button" class="btn btn-outline-primary projectButton projectButtonTwo" onclick="location.href='https://github.com/MarleeG/TriviaGame'">Repository</button>
+                        <button type="button" class="btn btn-outline-primary projectButton projectButtonOne" style="margin-left:45%;" onclick="location.href='https://www.datenightinbox.com/'">Date Night!</button>
                     </div>
 
                     <div class="modal-footer">
@@ -238,7 +216,6 @@
                 </div>
             </div>
         </div>
-
 
         <!-- Error Modal -->
         <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true"
@@ -262,27 +239,21 @@
             </div>
         </div>
     </div>
-
-
     <script>
         $(document).ready(function () {
+            const log = console.log;
             var questionValues = [];
-
             // Name and Image
             var userInfo = [];
-
             // Values User Inputted
             var allValues = [];
-
             // User Info and scores
             var allData = [];
-
 
             $(".submit_button").on("click", function () {
                 allValues = [];
                 $("#perfect_match_image").removeAttr("src");
-                $("#match_name").text("");
-
+                // $("#match_name").text("");
 
                 questionValues = [{
                     question: $("#question_one").val()
@@ -305,70 +276,36 @@
                 }, {
                     question: $("#question_ten").val()
                 }];
-
                 checkingValues();
-
             });
-
             function checkingValues() {
-
                 // check to see if they are filled in here
-
-
                 for (var j = 0; j < questionValues.length; j++) {
                     allValues.push(parseFloat(questionValues[j].question));
 
                 }
-
-                for (var i = 0; i < allValues.length; i++) {
-
-                }
-
-                // console.log();
-
                 userInfo = {
                     username: $("#name").val(),
                     photo: $("#photo").val(),
                     scores: allValues
                 };
-                console.log(userInfo)
-
-                // console.log("name: ", userInfo[0].username.trim());
-                // console.log("url: ", userInfo[0].photo.trim());
-                // console.log(userInfo[0].scores);
-
-                console.log("User answers: ", allValues);
+                // console.log(userInfo)
+                // console.log("User answers: ", allValues);
 
                 if (userInfo.username === "" && userInfo.photo === "" || allValues.indexOf(0) >= 0) {
                     $('#smallModal').modal('toggle');
                     i = allValues.length;
-
-
                 } else {
-
-                    // 
-
                     $.post("/api/friends", userInfo, function (data) {
                         console.log("My data", data);
-                        alert("Adding character...");
-
-                        // alert("sending info to server");
-
-
+                        log("The name: ", data.name);
                         $("#perfect_match_image").attr("src", data.photo);
-                        $("#match_name").text(data.name);
+                        $("#match_name").append(" " + data.name);
                         $('#myModal').modal('toggle');
                     })
-                    
-
                 }
             }
-
-
-
         });
     </script>
-
 </body>
-
 </html>
