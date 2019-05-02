@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
 
     <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 
     <!-- Bootstrap Javascript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
     <div class="container">
         <h1>Survey Questions</h1>
@@ -146,7 +147,8 @@
 
         <br>
         <strong>Question 9</strong>
-        <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
+        <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
+        </p>
 
         <form>
             <select class="options" id="question_nine">
@@ -191,8 +193,8 @@
         </p>
 
         <!-- Match Modal-->
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
-            id="myModal">
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true" id="myModal">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
 
@@ -201,13 +203,16 @@
                     </div>
                     <div class="modal-body">
                         <p class="match_info">
-                            <p id="match_name"  class="text-center">Name: </p>
+                            <p id="match_name" class="text-center">Name: </p>
                             <!-- <p id="match_name text-center"></p> -->
                         </p>
                         <div class="mx-auto">
-                            <img id="perfect_match_image" alt="your_match" style="width: 100px; height: auto; margin-left:45%;" />
+                            <img id="perfect_match_image" alt="your_match"
+                                style="width: 100px; height: auto; margin-left:45%;" />
                         </div>
-                        <button type="button" class="btn btn-outline-primary projectButton projectButtonOne" style="margin-left:45%;" onclick="location.href='https://www.datenightinbox.com/'">Date Night!</button>
+                        <button type="button" class="btn btn-outline-primary projectButton projectButtonOne"
+                            style="margin-left:45%;" onclick="location.href='https://www.datenightinbox.com/'">Date
+                            Night!</button>
                     </div>
 
                     <div class="modal-footer">
@@ -218,8 +223,8 @@
         </div>
 
         <!-- Error Modal -->
-        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true"
-            id="smallModal">
+        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+            aria-hidden="true" id="smallModal">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -289,8 +294,6 @@
                     photo: $("#photo").val(),
                     scores: allValues
                 };
-                // console.log(userInfo)
-                // console.log("User answers: ", allValues);
 
                 if (userInfo.username === "" && userInfo.photo === "" || allValues.indexOf(0) >= 0) {
                     $('#smallModal').modal('toggle');
@@ -308,4 +311,5 @@
         });
     </script>
 </body>
+
 </html>

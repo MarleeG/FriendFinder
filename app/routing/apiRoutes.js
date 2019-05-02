@@ -27,8 +27,11 @@ friends = require("../data/friend.js");
         console.log("new friend: ", newFriend);
         // SCORE 
         var lastUser = friends[friends.length - 1];
+
         console.log("last user info: ", lastUser);
+
         var allDifferences = [];
+
         console.log(friends.length - 2);
         for (var k = 0; k <= friends.length - 2; k++) {
             var totalDifference = 0;
@@ -49,7 +52,6 @@ friends = require("../data/friend.js");
         console.log("Perfect Match", match);
         friends.push(newFriend);
 
-        // res.json({ user: 'tobi' });
         res.json(match);
     });
 }
