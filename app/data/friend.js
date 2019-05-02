@@ -1,4 +1,3 @@
-        
         // JSon Object
         var jsonObject = [{
             name: "Rebecca",
